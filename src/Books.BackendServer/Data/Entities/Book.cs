@@ -13,8 +13,7 @@ namespace Books.BackendServer.Data.Entities
         [MaxLength(255)]
         [Column(TypeName = "nvarchar(255)")]
         [Required]
-
-        public string? Title { get; set; }
+        public string Title { get; set; } = string.Empty;
 
         [MaxLength(255)]
         [Column(TypeName = "nvarchar(255)")]
@@ -26,8 +25,18 @@ namespace Books.BackendServer.Data.Entities
         public int PublishYear { get; set; }
 
         [MaxLength(50)]
+        private decimal _Price;
+        public decimal Price
+        {
+            get
+            {  return Math.Round(_Price, 2); }
+            set
+            {
+                _Price = value;
+            } 
+        }
         [Column(TypeName = "tinyint")]
-        public decimal Price { get; set; }
+        [MaxLength(5)]
         public int Rating { get; set; }
         
         

@@ -14,10 +14,10 @@ namespace Books.BackendServer.Data.Entities
         [MaxLength(255)]
         [Column(TypeName = "nvarchar(255)" )]
         [Required]
-        public string ?Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         [Required]
-        public bool? Female { get; set; }
+        public bool Female { get; set; }
 
         [Required]
         public int Born { get; set; }
