@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Books.BackendServer", "..\src\Books.BackendServer\Books.BackendServer.csproj", "{BD4AE45D-5566-49CE-9D14-06E1DC0CFC5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Books.BackendServer", "..\src\Books.BackendServer\Books.BackendServer.csproj", "{BD4AE45D-5566-49CE-9D14-06E1DC0CFC5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Books.ViewModels", "..\src\Books.ViewModels\Books.ViewModels.csproj", "{F398DF8B-3A82-42D8-BED8-C1C8CB6D61F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Books.ViewModels", "..\src\Books.ViewModels\Books.ViewModels.csproj", "{F398DF8B-3A82-42D8-BED8-C1C8CB6D61F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{15313764-18B5-4543-BD04-F73E808F5A33}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
